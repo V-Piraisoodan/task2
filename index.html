@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="tittle">Difference between document and window objects</h1>
+        <div class="window">
+            <h2 class="tittle1">Window object</h2>
+            <li>It represents a browser window or frame that displays the contents of the web page.</li>
+            <li>It is the very first object that is loaded in the browser.</li>
+            <li>It is the object of the browser.</li>
+            <li>It is the root level element in any web page.</li>
+            <li>All the global variables are defined on the window object.
+                <ul class="ul">
+                    <li>For example, alert(), confirm() are methods defined on the window object.</li>
+                    <li>Writing alert() is similar to window.alert()</li>
+                    <li>Also, properties like document, location are properties of the window object.</li>
+                </ul>
+            </li>
+        </div>
+        <div class="document">
+            <h2 class="tittle1">Document object</h2>
+            <li>It represents any HTML document or web page that is loaded in the browser.</li>
+            <li>It is loaded inside the window.</li>
+            <li>It is the object of window property.</li>
+            <li>It is the direct child of the window object. It is aka Document Object Model (DOM).</li>
+            <li>You can access it via window.document or document.</li>
+            <li>document object has many useful methods defined on it.
+                <ul class="ul">
+                    <li>For example, document.getElementById(), document.getElementByTagName(),
+                        document.createElement(), document.querySelector() and many more
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </div>
+</body>
+</html>
